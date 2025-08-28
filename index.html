@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="container">
+            <div class="content_container">
+                <h3>Budget Management Tool</h3>
+
+                <label>Income</label><br>
+                <input type="number" id="input_income"><br>
+                <label>Expenses Amount</label>
+                <input type="number" id="input_expenses">
+                
+                <label>Expenses Category</label>
+                <div class="flex_ko_lagi">
+                   
+                <select id="expenses_list">
+                    <option hidden>Select the Expenses</option>
+                    <option id="">Utilities</option>
+                    <option id="">Debt</option>
+                    <option id="">Insurance</option>
+                    <option id="">Pay Roll</option>
+                    <option id="">Health</option>
+                    <option id="">Miscellaneous </option>
+                </select>
+                <button id="expense_btn">Add Expenses</button>
+</div>
+
+                <div>
+                    <p><span>Total Expenses</span> </p>
+                </div>
+                <button id="calcu">Calculate</button>
+                <div>
+                    <p><span>Saving</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
